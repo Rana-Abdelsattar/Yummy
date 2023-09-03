@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body{
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+
+}
+/* ====================== */
+#loading{
+  background-color: #333;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ====================================== */
+
+
+.layer{
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+opacity: 0;
+  top:100%;
+  left:0;
+  transition: all 1s;
+}
+.item{
+  position: relative;
+  overflow: hidden;
+}
+.item:hover .layer{
+  top:0%;
+  opacity: 1;
+}
+.sidebar{
+  width: 15%;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+
+}
+.upside img{
+  width: 70px;
+}
+
+
+.category,
+#FilteredCategory,
+.search,
+.area,
+.ingredient,
+.description,
+.contactUs,
+.NameAlert,
+.emailAlert,
+.ageAlert,
+.passAlert,
+.telAlert{
+  display: none;
+}
+.inputs{
+  position: relative;
+  width: 40%;
+}
+.inputs::placeholder{
+  position: absolute;
+  left:5px;
+}

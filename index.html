@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+
+    <section id="loading">
+      <div class="lds-dual-ring"></div>
+    </section>
+<!-- ============================================ -->
+
+
+    <section id="sideBar" class="sidebar">
+      <div
+        id="navBar"
+        class="navbar w-100 bg-dark text-light align-items-start pe-5 ps-2"
+      >
+        <ul class="list-unstyled">
+          <li class="my-3 wow bounceInUp" id="searchlink">Search</li>
+          <li class="my-3 wow bounceInUp" id="categorylink">Categories</li>
+          <li class="my-3 wow bounceInUp" id="arealink">Area</li>
+          <li class="my-3 wow bounceInUp" id="ingredientlink">Ingredients</li>
+          <li class="my-3 wow bounceInUp" id="contactlink">contact Us</li>
+        </ul>
+      </div>
+
+      <div class="icons bg-light d-flex flex-column justify-content-between">
+        <div class="upside">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="burgar-icon text-center">
+          <i id="BurgarIcon" class="fa-solid fa-bars fa-2x"></i>
+          <i id="closeIcon" class="fa-solid fa-x fa-2x d-none"></i>
+        </div>
+        <div class="downside text-center">
+          <i class="fa-solid fa-globe"></i>
+          <br />
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+
+    <section id="home" class="home">
+      <div class="container my-5">
+        <div class="row gy-4 ms-2" id="dataInRow"></div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+     
+    <section id="search" class="search">
+      <div class="container py-5">
+        <div class="d-flex justify-content-evenly">
+          <input type="text" class="inputs  btn btn-dark border-white" placeholder="Search by name" id="searchByName">
+          <input type="text" class="inputs  btn btn-dark border-white"  placeholder="Search by first letter" id="searchByLetter">
+        </div>
+
+        <div class="searchData">
+          <div class="container py-5">
+            <div class="row" id="searchByLetterBox">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- =================================================== -->
+    <section class="description text-white" id="description">
+     <div class="container py-5">
+      <div class="row" id="descriptionBox">
+
+      </div>
+     </div>
+
+    </section>
+
+
+
+
+    <!-- ========================================== -->
+
+    <section class="category" id="category">
+      <div class="allCategory">
+        <div class="container " >
+          <div class="row gy-4" id="categoryData">
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="FilteredCategory">
+        <div class="container my-5">
+          <div class="row gy-4" id="FilteredCateory">
+           
+          </div>
+        
+        </div>
+      </div>
+     
+    </section>
+
+    <!-- ===================================== -->
+
+    <section class="area" id="area" >
+      <div class="container my-5 ms-5 ">
+        <div class="areaName row gy-3 ms-5" id="areaData">
+     
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================== -->
+    <section class="ingredient" id="ingredient">
+       <div class="container my-5">
+            <div class="row gy-4 ms-5" id="ingredientData">
+ 
+</div>
+</div>
+
+    </section>
+
+    <!-- ===================================================== -->
+
+     <section class="contactUs">
+      <div class="container py-5">
+        <form action="" id="form">
+          <div class="row my-5">
+            <div class="col md-6">
+              <input type="text" class="name form-control p-3 my-3" placeholder="Enter Your Name" id="name"> 
+              <div class="NameAlert bg-danger text-white">Special characters and numbers not allowed</div>
+            </div>
+            <div class="col md-6">
+              <input type="email"  class="email form-control p-3 my-3" placeholder="Enter Your Email" id="email">
+              <div class="emailAlert bg-danger text-white">Email not valid *exemple@yyy.zzz</div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col md-6">
+              <input type="text" class="phone form-control p-3 my-3" placeholder="Enter Your Phone" id="phone"> 
+              <div class="telAlert bg-danger text-white">Enter valid Phone Number</div>
+            </div>
+            <div class="col md-6">
+              <input type="number"  class="age form-control p-3 my-3" id="age" placeholder="age">
+              <div class="ageAlert bg-danger text-white">Enter valid age +20</div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col md-6">
+              <input type="password" class="pass form-control p-3 my-3" placeholder="Enter Your Password" id="password"> 
+              <div class="passAlert bg-danger text-white">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+            </div>
+            <div class="col md-6">
+              <input type="password"  class=" repass form-control p-3 my-3" id="repass">
+            </div>
+          </div>
+          <button class="btn bg-danger m-auto p-3 text-white"  id="submit">Submit</button>
+        </form>
+       
+        </div>
+       
+      </div>
+     </section>
+
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
